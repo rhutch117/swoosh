@@ -21,9 +21,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWu-1b-7Jw">
-                                <rect key="frame" x="87" y="204" width="240" height="66"/>
+                                <rect key="frame" x="87.333333333333329" y="204" width="239.33333333333337" height="66"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="N5H-Vp-nc9"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="240" id="N5H-Vp-nc9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="48"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -33,7 +33,7 @@
                                 <rect key="frame" x="147.66666666666666" y="84" width="118.99999999999997" height="20"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a team in your city &amp; dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjz-qn-YCQ">
-                                <rect key="frame" x="87" y="318" width="240" height="46.666666666666686"/>
+                                <rect key="frame" x="87.333333333333329" y="318" width="239.33333333333337" height="46.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -50,7 +50,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xN1-Fh-gb5">
-                                <rect key="frame" x="87" y="270" width="240" height="33"/>
+                                <rect key="frame" x="87.333333333333329" y="270" width="239.33333333333337" height="33"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -65,6 +65,7 @@
                             <constraint firstAttribute="bottom" secondItem="xgi-VR-lGQ" secondAttribute="bottom" id="6F9-jM-h6E"/>
                             <constraint firstAttribute="trailing" secondItem="xgi-VR-lGQ" secondAttribute="trailing" id="71S-ZS-1lB"/>
                             <constraint firstItem="WWu-1b-7Jw" firstAttribute="top" secondItem="teY-D5-Eb8" secondAttribute="bottom" constant="100" id="F7y-TL-HNc"/>
+                            <constraint firstItem="WWu-1b-7Jw" firstAttribute="leading" secondItem="xgi-VR-lGQ" secondAttribute="trailing" constant="-326.66666666666669" id="Jeg-xO-ROl"/>
                             <constraint firstItem="xN1-Fh-gb5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K3J-Ux-gw8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rfs-kN-xpf" secondAttribute="trailing" constant="20" id="Kq7-cQ-hDZ"/>
                             <constraint firstItem="xgi-VR-lGQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Mbb-P6-wBa"/>
