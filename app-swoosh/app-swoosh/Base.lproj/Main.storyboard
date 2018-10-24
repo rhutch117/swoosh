@@ -39,6 +39,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="c1n-hd-roV" kind="show" id="ral-Uj-dE8"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xN1-Fh-gb5">
                                 <rect key="frame" x="26.5" y="262" width="361.5" height="33"/>
@@ -162,6 +165,17 @@
                                     <constraint firstAttribute="trailingMargin" secondItem="gNi-B6-ud7" secondAttribute="trailing" constant="20" id="hSZ-vH-5Mu"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwh-WW-AFo">
+                                <rect key="frame" x="10" y="10" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2Ow-9l-7iI"/>
+                                    <constraint firstAttribute="width" constant="60" id="n87-7c-xk4"/>
+                                </constraints>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="SDn-Nh-0vx" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="amJ-ZT-Hpd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -172,9 +186,11 @@
                             <constraint firstItem="FT5-bo-WMU" firstAttribute="top" secondItem="DTf-86-gc2" secondAttribute="bottom" constant="50" id="FB6-94-3FY"/>
                             <constraint firstItem="m5q-kU-39g" firstAttribute="trailing" secondItem="DTf-86-gc2" secondAttribute="trailing" id="N05-OX-FEu"/>
                             <constraint firstItem="DTf-86-gc2" firstAttribute="leading" secondItem="m5q-kU-39g" secondAttribute="leading" id="fj9-Rr-JeV"/>
+                            <constraint firstItem="pwh-WW-AFo" firstAttribute="top" secondItem="bau-jw-fAU" secondAttribute="top" constant="10" id="gC2-tb-vla"/>
                             <constraint firstItem="eSG-6P-NvK" firstAttribute="leading" secondItem="m5q-kU-39g" secondAttribute="leading" id="o1Y-1P-tco"/>
                             <constraint firstItem="DTf-86-gc2" firstAttribute="top" secondItem="m5q-kU-39g" secondAttribute="top" constant="40" id="opB-IL-23y"/>
                             <constraint firstItem="eSG-6P-NvK" firstAttribute="top" secondItem="bau-jw-fAU" secondAttribute="top" id="pFs-d4-U5J"/>
+                            <constraint firstItem="pwh-WW-AFo" firstAttribute="leading" secondItem="m5q-kU-39g" secondAttribute="leading" constant="10" id="s6k-M3-KP5"/>
                             <constraint firstItem="TS2-Ve-en8" firstAttribute="leading" secondItem="m5q-kU-39g" secondAttribute="leading" constant="20" id="vIU-2L-UTM"/>
                             <constraint firstItem="FT5-bo-WMU" firstAttribute="leading" secondItem="m5q-kU-39g" secondAttribute="leading" constant="20" id="yZU-LT-XsN"/>
                             <constraint firstItem="m5q-kU-39g" firstAttribute="trailing" secondItem="TS2-Ve-en8" secondAttribute="trailing" constant="20" id="zPD-dY-bB1"/>
@@ -183,6 +199,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yeS-9v-uVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="SDn-Nh-0vx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="937.68115942028987" y="133.25892857142856"/>
         </scene>
@@ -279,6 +296,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
